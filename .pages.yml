@@ -1,0 +1,116 @@
+{
+  "media": {
+    "input": "images",
+    "output": "/Squishy-pop/images",
+    "categories": [
+      "image"
+    ],
+    "rename": "safe"
+  },
+  "content": [
+    {
+      "name": "produits",
+      "label": "Mes produits",
+      "type": "file",
+      "path": "produits.json",
+      "format": "json",
+      "list": true,
+      "fields": [
+        {
+          "name": "nom",
+          "label": "Nom du produit",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "photo",
+          "label": "Photo du produit",
+          "type": "image",
+          "required": true
+        },
+        {
+          "name": "prix",
+          "label": "Prix en euros",
+          "type": "number",
+          "required": true,
+          "description": "Mini : 3 € · Normal : 5 € · Grand : 10 €. Prix libre si nécessaire.",
+          "options": {
+            "min": 0
+          }
+        },
+        {
+          "name": "taille",
+          "label": "Gamme",
+          "type": "select",
+          "options": {
+            "values": [
+              {
+                "name": "mini",
+                "label": "Mini"
+              },
+              {
+                "name": "normal",
+                "label": "Normal"
+              },
+              {
+                "name": "grand",
+                "label": "Grand"
+              }
+            ]
+          }
+        },
+        {
+          "name": "lienLeboncoin",
+          "label": "Lien de mon annonce Leboncoin",
+          "type": "string",
+          "required": true,
+          "pattern": {
+            "regex": "^https://(www\\.)?leboncoin\\.fr/ad/[^\\s]+$",
+            "message": "Collez le lien complet de votre annonce, commençant par https://www.leboncoin.fr/ad/"
+          }
+        },
+        {
+          "name": "statut",
+          "label": "Disponibilité",
+          "type": "select",
+          "required": true,
+          "options": {
+            "values": [
+              {
+                "name": "disponible",
+                "label": "Disponible — bouton d’achat actif"
+              },
+              {
+                "name": "pause",
+                "label": "Annonce en pause"
+              },
+              {
+                "name": "vendu",
+                "label": "Vendu"
+              },
+              {
+                "name": "masque",
+                "label": "Masqué — invisible sur le site"
+              }
+            ]
+          }
+        },
+        {
+          "name": "description",
+          "label": "Petite description",
+          "type": "text"
+        },
+        {
+          "name": "etat",
+          "label": "État",
+          "type": "string"
+        },
+        {
+          "name": "matiere",
+          "label": "Matière (si connue)",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
