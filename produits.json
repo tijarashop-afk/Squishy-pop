@@ -1,0 +1,13 @@
+[
+  {
+    "nom": "Butter Squishy",
+    "prix": 5,
+    "taille": "normal",
+    "etat": "Neuf",
+    "matiere": "Plastique",
+    "statut": "disponible",
+    "lienLeboncoin": "https://www.leboncoin.fr/ad/jeux_jouets/3263488134",
+    "photo": "/Squishy-pop/images/butter.svg",
+    "description": "Un jouet à presser en forme de motte de beurre, pour une petite pause au quotidien."
+  }
+]
