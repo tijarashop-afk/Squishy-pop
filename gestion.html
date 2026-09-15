@@ -1,1 +1,45 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Gérer mes produits — Squishy Pop</title><style>*{box-sizing:border-box}body{margin:0;background:#fffdf5;color:#172449;font:17px/1.65 system-ui,sans-serif}main{max-width:650px;margin:auto;padding:32px 22px}h1{font-size:36px;line-height:1.15}h2{font-size:22px}a{color:#2348cf}.button{display:block;text-align:center;background:#2348cf;color:white;padding:16px;border-radius:16px;text-decoration:none;font-weight:bold;margin:26px 0;min-height:52px}a:focus-visible{outline:3px solid #172449;outline-offset:4px}.box{background:#fff0c2;padding:20px;border-radius:20px;margin:24px 0}li{margin-bottom:14px}small{font-size:14px}.back{display:inline-block;padding:8px 0}</style></head><body><main><a class="back" href="index.html">← Voir ma boutique</a><h1>Mes produits,<br>en quelques gestes.</h1><p>Ajoute une photo, un nom, un prix et le lien de ton annonce. L’enregistrement dans Pages CMS met à jour ta boutique après la publication GitHub Pages.</p><a class="button" href="https://app.pagescms.org/">Ouvrir la gestion de mes produits</a><div class="box"><h2>Première connexion</h2><ol><li>Connecte-toi avec ton compte GitHub <strong>tijarashop-afk</strong>.</li><li>Si Pages CMS demande à être installé, sélectionne <strong>uniquement le dépôt Squishy-pop</strong>. Cet accès lui permet d’enregistrer tes produits et tes photos.</li><li>Ouvre <strong>Squishy-pop</strong>, puis la branche <strong>main</strong> si elle est demandée.</li></ol><small>La connexion autorisée ici dans ChatGPT ne connecte pas automatiquement Pages CMS. Ne partage jamais ton mot de passe dans une conversation.</small></div><h2>Ajouter ou modifier un produit</h2><ol><li>Ouvre <strong>Mes produits</strong>.</li><li>Ajoute une fiche à la liste ou ouvre un produit existant.</li><li>Choisis ta photo et remplis le nom, le prix et le lien Leboncoin.</li><li>Choisis <strong>Disponible</strong> pour activer le bouton d’achat, ou <strong>Masqué</strong> pour préparer la fiche sans l’afficher.</li><li>Appuie sur <strong>Save / Enregistrer</strong>, puis attends la publication avant d’actualiser ta boutique.</li></ol><p>Les champs des produits sont en français. Certains boutons de Pages CMS peuvent être en anglais.</p><p><strong>Aucun fichier à télécharger ou à remplacer, et aucune utilisation de l’IA pour modifier tes produits.</strong></p><p><a href="index.html">Ouvrir ma boutique</a> · <a href="https://pagescms.org/docs/quick-start/">Aide Pages CMS</a></p></main></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Modifier Squishy Pop</title>
+<style>
+:root{--ink:#172449;--blue:#2348cf;--blue-dark:#18328d;--yellow:#ffdf64;--butter:#fff0c2;--paper:#fffdf5;--line:#d7dfed}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,sans-serif}main{max-width:680px;margin:auto;padding:30px 20px 60px}.brand{font-size:25px;font-weight:900;text-decoration:none}.brand span{color:var(--blue)}h1{font-size:clamp(36px,9vw,54px);line-height:1.05;letter-spacing:-.04em;margin:34px 0 18px}h2{font-size:22px;margin-top:32px}.lead{font-size:19px;color:#58647a}.box{background:var(--butter);border:2px solid #ead699;padding:20px;border-radius:22px;margin:24px 0}.template{background:#fff;border:2px solid var(--line);padding:18px;border-radius:18px;white-space:pre-wrap;font:15px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace}.button{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;background:var(--blue);color:#fff;border:0;border-radius:999px;padding:14px 18px;font-weight:900;font-size:16px;cursor:pointer;box-shadow:0 4px 0 var(--blue-dark);margin:18px 0}.button:active{transform:translateY(2px);box-shadow:0 2px 0 var(--blue-dark)}.secondary{display:inline-block;color:var(--blue);font-weight:800;text-decoration:none;margin-top:12px}.small{font-size:14px;color:#667085}.done{min-height:24px;font-size:14px;font-weight:800;color:#203c94}ol{padding-left:24px}li{margin-bottom:12px}
+</style>
+</head>
+<body>
+<main>
+<a class="brand" href="index.html">squishy<span>pop.</span></a>
+<h1>Modifier la boutique<br>sans toucher à GitHub.</h1>
+<p class="lead">Le plus simple : envoie directement dans notre conversation ChatGPT la photo et les informations du produit. Je peux ensuite mettre le site à jour pour toi.</p>
+<div class="box">
+<h2 style="margin-top:0">Pour ajouter un produit</h2>
+<ol>
+<li>Envoie la <strong>photo</strong>.</li>
+<li>Colle le <strong>lien de l’annonce Leboncoin</strong>.</li>
+<li>Indique le <strong>nom</strong> et le <strong>prix</strong>.</li>
+<li>Si tu veux, ajoute la taille, l’état et une courte description.</li>
+</ol>
+</div>
+<h2>Modèle à copier</h2>
+<div id="modele" class="template">Ajoute ce produit sur Squishy Pop :
+Nom :
+Prix :
+Lien Leboncoin :
+Taille : mini / normal / grand
+État :
+Description :
+Statut : disponible</div>
+<button class="button" id="copy" type="button">Copier le modèle</button>
+<div class="done" id="done" aria-live="polite"></div>
+<p class="small">Tu n’as pas besoin d’ouvrir GitHub ni Pages CMS pour les modifications que tu me demandes dans ChatGPT.</p>
+<a class="secondary" href="index.html">← Retour à la boutique</a>
+</main>
+<script>
+const btn=document.getElementById('copy'),out=document.getElementById('done'),text=document.getElementById('modele').innerText;
+btn.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(text);out.textContent='Modèle copié.'}catch{out.textContent='Sélectionne le texte ci-dessus puis copie-le.'}});
+</script>
+</body>
+</html>
